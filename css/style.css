@@ -1,0 +1,998 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Noto+Sans:400,400i,700&subset=cyrillic,cyrillic-ext');
+
+body {
+	font-family: 'Noto Sans', sans-serif;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+	background-color: #000;
+}
+
+html, body,{
+	width: 100%;
+	height: 100%;
+}
+
+
+.ba-goods {
+	min-height: 100vh;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	font-size: 20px;
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 11px 22px;
+	background: #fff;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	color: #fff;
+	background: #000;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+  border-color: #ccc;
+  outline: none;
+}
+textarea {
+		background: #000;
+		width: 100%;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+		border-bottom: 2px solid #fff;
+		padding: 22px 0;
+
+}
+
+.ba-row {
+	display:flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-left: -30px;
+	justify-content: space-between;
+  }
+
+
+  .ba-row > [class*='ba-col-'] {
+	padding-left: 30px;
+  }
+  
+  .ba-col-1 {
+	width:8.33%;
+  }
+  
+  .ba-col-2 {
+	width:16.666%;
+  }
+  
+  .ba-col-3 {
+	width:25%;
+  }
+  
+  .ba-col-4 {
+	width:33.333%;
+  }
+  
+  .ba-col-5 {
+	width:41.666%;
+  }
+
+  
+
+
+  .ba-col-6 {
+	width:50%;
+  }
+  
+  .ba-col-7 {
+	width:58.33%;
+  }
+  
+  .ba-col-8 {
+	width:66.666%;
+  }
+  
+  .ba-col-9 {
+	width:75%;
+  }
+  
+  .ba-col-10 {
+	width:83.333%;
+  }
+  
+  .ba-col-11 {
+	width:91.666%;
+  }
+  
+  .ba-col-12 {
+	width:100%;
+  }
+
+	.flex_jc_center {
+		display: flex;
+		justify-content: center;
+	}
+
+	.flex {
+		display: flex;
+	}
+
+
+h1, h2, h3, h4, h5, h6 {
+margin: 0;
+}
+
+h1, h2 {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+
+
+
+/* ------------------- HEADER ---------------------- */
+
+
+.ba-header {
+    position: absolute;
+    left: 0;
+    top: 0;
+		right: 0;
+		background-color: #1D2323;
+}
+
+.ba-header-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 9px 0;
+}
+
+/* .ba-nav {
+	display:flex;
+	align-items: center;
+  } */
+
+  .ba-menu {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 17px;
+  }
+  
+  .ba-menu a {
+		text-decoration: none;
+		color: #fff;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: normal;
+  }
+
+  .ba-menu a:hover {
+    color: #909090;
+}
+
+  .ba-menu li + li {
+		padding-left: 32px;
+  }
+
+  .ba-logo-title {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		list-style: none;
+		color: #fff;
+  }
+  
+  .ba-logo {
+	  text-decoration: none;
+  }
+
+/* -------------------end of HEADER ---------------------- */
+
+
+
+
+
+/* ------------------- INRO -----------------------*/
+
+
+
+
+ .ba-intro {
+    background: #1D2323 url(../img/hero.jpg) no-repeat 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+		align-items: center;
+		margin-bottom: 85px;
+}
+
+
+/* --------------------- end of INTRO ---------------- */
+
+
+
+
+/* ---------------------- ABOUT ---------------------- */
+
+
+.ba-about {
+	margin-bottom: 211px;
+}
+
+.ba-about-title {
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.ba-about-desc {
+	width: 35%;
+	font-size: 16px;
+	font-weight: 400;
+	margin-right: 178px;
+}
+
+.ba-about-desc p {
+	margin-top: 0;
+}
+
+.ba-about-img {
+	text-align: center;
+}
+
+/* ------------------- end of ABOUT ------------------- */
+
+
+
+
+
+
+
+/* ------------------- PHOTOCARDS --------------------- */
+
+.ba-photocards {
+	margin-bottom: 200px;
+}
+
+.ba-master-photo img {
+	object-fit: cover;
+}
+
+.ba-photocards-title {
+	padding-bottom: 50px;
+}
+
+.ba-master {
+	display: flex;
+	flex-direction: column;
+}
+
+.ba-name {
+	background-color: #F1F1F1;
+	font-size: 18px;
+	text-align: center;
+	color: #000;
+	padding: 15px;
+}
+
+.ba-master-photo {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+
+.ba-master span {
+	padding: 5px;
+	position: absolute;
+	background: #5c848ec4;
+	font-size: 12px;
+	font-weight: 400;
+	top: 92%;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	display: none;
+}
+
+.ba-master:hover span {
+	display: block;
+}
+
+.ba-master img:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.ba-mslide + .ba-mslide{
+	margin-left: 30px;
+}
+
+/* ---------------------- end of PHOTOCARDS ------------------------- */
+
+
+
+
+/* ---------------------- FEEDBACK ------------------------- */
+
+.ba-feedback {
+	margin-bottom: 200px;
+}
+
+.ba-feedback-title {
+	text-transform: none;
+	padding-bottom: 50px;
+}
+
+.ba-feedback-sub {
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding-bottom: 67px;
+}
+
+.ba-feedback-quote {
+	padding: 10px 10px 50px;
+	font-style: italic;
+	font-size: 18px;
+	margin: 0;
+}
+
+.ba-feedback-slider {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.ba-feedback-author {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+/* ----------------------- end of FEEDBACK ----------------------- */
+
+
+/* ----------------------- FORM/PRICES --------------------------- */
+
+.ba-prices-form {
+	margin-bottom: 200px;
+}
+
+.ba-title-form-sub {
+	font-size: 12px;
+}
+
+.ba-form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.ba-form input {
+	background:transparent;
+	width: 100%;
+	border: none;
+}
+.form-title {
+	position: relative;
+	top: 25px;
+	transition: transform 0.4s ease-in, color 0.4s ease-in;
+}
+.ba-anime-form :focus ~ label,
+.ba-anime-form :valid ~ label {
+	font-size: 12px;
+	color: #7b7676;
+	transform: translateY(-25px);
+}
+.ba-anime-form {
+	position: relative;
+}
+.ba-anime-form label {
+	position: absolute;
+	left: 0;
+}
+.ba-anime-form {
+	padding: 25px 0 5px;
+}
+.ba-anime-form input {
+	border-bottom: 2px solid #fff;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.ba-btn {
+	background:#1D2323;
+	color: #fff;
+	border: none;
+	width: 170px;
+	height: 50px;
+	font-size: 18px;
+	text-transform: none;
+	margin-top: 34px;
+}
+
+.ba-prices-title {
+	margin-bottom: 18px;
+}
+
+.ba-prices-list {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+
+.ba-prices-list li {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 15px;
+}
+
+/* ----------------------- end of FORM/PRICES -------------------- */
+
+
+
+
+/* --------------------- CONTACT ---------------------------- */
+
+.ba-contact {
+	margin-bottom: 120px;
+}
+
+.ba-contact-title {
+	margin-bottom: 45px;
+}
+
+.ba-contact a {
+	font-size: 14px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.ba-contact a:hover {
+	color: #ccc;
+}
+
+
+.ba-contact-email {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.ba-contact-email img {
+	margin-right: 59px;
+}
+
+
+.ba-contact-phone {
+	display: flex;
+	justify-content: center;
+}
+
+.ba-contact-phone img {
+	margin-right: 43px;
+}
+
+.ba-contact-map {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.ba-contact-map img {
+	margin-right: 44px;
+}
+
+.ba-contact-phone:hover {
+	cursor: pointer;
+}
+
+/* ---------------- end of CONTACT ---------------------- */
+
+
+
+
+
+
+/* ------------------- MAP ------------------- */
+
+#ba-map {
+	width: 100%;
+	display: flex;
+}
+
+/* ------------------ end of MAP -------------- */
+
+
+
+
+
+
+/* --------------------- FOOTER ------------------- */
+
+.ba-footer {
+	background-color: #1D2323;
+	position: relative;
+	padding: 29px 0 12px;
+}
+
+.ba-socials a:first-child {
+	margin-right: 34px;
+}
+
+.ba-socials a:hover {
+	opacity: 0.7;
+}
+
+.ba-socials {
+	margin-bottom: 39px;
+}
+
+.ba-socials a:first-child {
+	text-align: right;
+}
+
+.ba-socials a:last-child {
+	text-align: left;
+}
+
+.ba-copyright {
+	font-size: 10px;
+}
+
+.ba-to-top {
+	width: 70px;
+	height: 70px;
+	right: 4%;
+	bottom: 4%;
+	position: fixed;
+	display:none;
+}
+
+.ba-to-top:hover {
+	opacity: 0.7;
+}
+
+
+/* ------------------ GOODS --------------------- */
+
+.ba-store {
+	margin: 100px 0;
+}
+
+.ba-store-title {
+	margin-bottom: 50px;
+}
+
+.ba-order-btn {
+	margin-top: 20px;
+	background: #1D2323;
+	color: #fff;
+	text-decoration: none;
+	padding: 15px 53px;
+	font-size: 12px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+}
+
+.ba-order-btn:hover {
+	background: #000;
+	border: 1px solid #fff;
+}
+
+
+.ba-store-card {
+	position: relative;
+}
+
+
+
+.ba-watch {
+    position: absolute;
+    top: 45%;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+
+.ba-watch a {
+	text-decoration: none;
+	color: #fff;
+	background: #5c848ec4;
+	border: 1px solid #fff;
+	padding: 8px 29px;
+	font-size: 12px;
+	display: none;
+}
+
+
+.ba-store-card:hover a {
+	opacity: 1;
+	display: block;
+}
+
+.ba-store-card:hover a:not(.ba-watch-btn) {
+	opacity: 0.7;
+}
+
+
+
+
+.ba-burger-menu {
+		display: none;
+}
+
+.ba-menu-mob {
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+	justify-content: center;
+	display: none;
+	z-index: 2;
+}
+
+.ba-menu-mob li {
+	padding-bottom: 20px;
+}
+
+.ba-menu-mob li:first-child {
+	position: absolute;
+	top: 5px;
+	right: 20px;
+}
+
+
+
+.ba-menu-mob a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 40px;
+}
+
+.ba-menu-mob li:not(:first-child) a:hover {
+	color: #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.ba-show {
+	display: flex;
+
+}
+
+.ba-del-srcoll {
+	overflow: hidden;
+}
+
+
+
+@media screen and (max-width: 520px) {
+
+	.ba-about-title, .ba-feedback-title {
+		font-size: 25px;
+	}
+
+	.ba-feedback-sub {
+		font-size: 18px;
+	}
+
+	.ba-feedback-quote {
+		font-size: 14px;
+	}
+
+	.ba-feedback-author {
+		font-size: 16px;
+	}
+
+	.ba-button {
+		font-size: 16px;
+	}
+
+	.ba-about-desc {
+		font-size: 14px;
+	}
+
+	.ba-prices-list li {
+		font-size: 14px;
+	}
+
+	.ba-mslide + .ba-mslide{
+		margin-left: 0;
+	}
+
+
+	.ba-intro {
+		background: #1D2323 url(../img/hero.jpg) no-repeat 25% 50%;
+	}
+
+	.ba-about {
+		margin-bottom: 50px;
+	}
+
+	.ba-col--small {
+		width:100%;
+	  }
+	  .ba-row--small {
+		flex-direction: column;
+		
+	  }
+
+	  .ba-about-img {
+		  display: none;
+	  }
+
+	  .ba-contact-email {
+		display: block;
+		justify-content: normal;
+	}
+
+	.ba-contact-phone {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.ba-contact-map {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	.ba-contact-email img {
+		margin-right: 20px;
+	}
+
+	.ba-contact-phone img {
+		margin-right: 36px;
+	}
+	
+	.ba-contact-map img {
+		margin-right: 17px;
+	}
+
+	.ba-contact-title {
+		font-size: 25px;
+		font-weight: 700;
+	}
+
+	.ba-prices-form {
+		margin-bottom: 50px;
+	}
+
+	.ba-feedback {
+		margin-bottom: 50px;
+	}
+
+	.ba-photocards {
+		margin-bottom: 50px;
+	}
+
+	.ba-form {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		margin-bottom: 50px;
+	}
+
+	.ba-contact-email {
+		display: block;
+		justify-content: normal;
+		margin-bottom: 20px;
+	}
+
+	.ba-contact-phone {
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+	}
+
+	.ba-menu {
+		display: none;
+	}
+
+	.ba-burger-menu {
+		font-size: 40px;
+		color: #fff;
+		text-decoration: none;
+		display: block;
+	}
+
+	.ba-contact-map {
+		display: flex;
+		margin-bottom: 20px;
+		justify-content: flex-start;
+	}
+
+	.ba-order {
+		order: 1;
+	}
+
+	.ba-contact {
+		margin-bottom: 50px;
+	}
+
+	.ba-watch {
+		position: absolute;
+		top: 45%;
+		left: 32%;
+	}
+
+	.ba-order-btn {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		background: #1D2323;
+		color: #fff;
+		text-decoration: none;
+		padding: 15px 53px;
+		font-size: 12px;
+		text-transform: uppercase;
+		border: 1px solid transparent;
+	}
+
+	.ba-mslider {
+		display: block;
+	}
+
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+	.ba-row {
+		flex-wrap: nowrap;
+	}
+
+	.ba-row-small2 {
+		flex-direction: column
+	}
+
+	.ba-col--small2{
+		width: 100%;
+	}
+
+	.ba-col-5s {
+		margin: 0 auto;
+		width: 60%;;
+	}
+
+	.ba-menu {
+		display: none;
+	}
+
+	.ba-intro {
+		margin-bottom: 50px;
+	}
+
+	.ba-about {
+		margin-bottom: 150px;
+	}
+
+	.ba-about-desc {
+		font-size: 16px;
+		font-weight: 400;
+		margin-right: 0;
+	}
+
+	.ba-about-title {
+		font-size: 25px;
+	}
+
+	.ba-photocards-title {
+		font-size: 26px;
+	}
+
+	.ba-burger-menu {
+		font-size: 40px;
+		color: #fff;
+		text-decoration: none;
+		display: block;
+	}
+
+	.ba-feedback {
+		margin-bottom: 150px;
+	}
+
+	.ba-form {
+		margin-bottom: 150px;
+	}
+
+	.ba-contact-email img {
+		margin-right: 15px;
+	}
+
+	.ba-contact-phone img {
+		margin-right: 43px;
+	}
+	
+	.ba-contact-map img {
+		margin-right: 17px;
+	}
+
+
+	  .ba-store-card {
+		justify-content: center;
+		display: flex;
+		position: relative;
+	}
+
+	.ba-order-btn {
+		margin-top: 50px;
+		margin-bottom: 50px;
+
+	}
+
+	.ba-prices-form {
+		margin-bottom: 150px;
+	}
+
+	.ba-mslide{
+		margin-left: 30px;
+	}
+
+	.ba-photocards {
+		margin-bottom: 150px;
+	}
+
+}

@@ -25,28 +25,29 @@ $('.single-item').slick({
 
 
 $('.ba-mslider').slick({
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    adaptiveHeight: true,
-    slide: ('.ba-mslide'),
+    slidesPerRow: 4,
+    rows: 1,
     responsive: [{
-        breakpoint: 520,
-        settings: {
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
+            breakpoint: 1025,
+            settings: {
+                arrows: false,
+                slidesPerRow: 2,
+                rows: 2
+            }
         },
-        breakpoint: 1024,
-        settings: {
-            arrows: false,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            slidesPerRow:2,
-            rows:2
+        {
+            breakpoint: 520,
+            settings: {
+                slidesPerRow: 1,
+                rows: 1,
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            }
         }
-    }, ]
+    ]
 });
 
 

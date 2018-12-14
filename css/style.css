@@ -314,9 +314,12 @@ h1, h2 {
 }
 
 .ba-master {
+	padding: 15px;
 	display: flex;
 	flex-direction: column;
 }
+
+
 
 .ba-name {
 	background-color: #F1F1F1;
@@ -354,9 +357,7 @@ h1, h2 {
 	cursor: pointer;
 }
 
-.ba-mslide + .ba-mslide{
-	margin-left: 30px;
-}
+
 
 /* ---------------------- end of PHOTOCARDS ------------------------- */
 
@@ -894,6 +895,8 @@ input[type=number]::-webkit-outer-spin-button {
 		display: block;
 	}
 
+	
+
 }
 
 
@@ -903,6 +906,7 @@ input[type=number]::-webkit-outer-spin-button {
 	.ba-row {
 		flex-wrap: nowrap;
 	}
+
 
 	.ba-row-small2 {
 		flex-direction: column
@@ -988,11 +992,15 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 
 	.ba-mslide{
-		margin-left: 30px;
+		margin-left: 0;
 	}
 
 	.ba-photocards {
 		margin-bottom: 150px;
+	}
+
+	.ba-contact a {
+		font-size: 13px;
 	}
 
 }

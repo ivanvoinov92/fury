@@ -182,8 +182,8 @@ h1, h2 {
     position: absolute;
     left: 0;
     top: 0;
-		right: 0;
-		background-color: #1D2323;
+	right: 0;
+	background-color: #1D2323;
 }
 
 .ba-header-bar {
@@ -900,7 +900,8 @@ input[type=number]::-webkit-outer-spin-button {
 		display: block;
 	}
 
-	
+
+
 
 }
 
@@ -924,7 +925,6 @@ input[type=number]::-webkit-outer-spin-button {
 
 	.ba-col-5s {
 		margin: 0 auto;
-		width: 60%;;
 	}
 
 	.ba-menu {
@@ -973,11 +973,11 @@ input[type=number]::-webkit-outer-spin-button {
 	}
 
 	.ba-contact-phone img {
-		margin-right: 43px;
+		margin-right: 36px;
 	}
 	
-	.ba-contact-map img {
-		margin-right: 17px;
+	.ba-contact-email img {
+		margin-right: 23px;
 	}
 
 
